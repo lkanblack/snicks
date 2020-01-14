@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row first-block"></div>
+<div class="container mobile-product-nav">
+    <div class="row nav">
+        <a href="" class="col-xs-4 menu-item active">All</a>
+        <a href="" class="col-xs-4 menu-item">Men</a>
+        <a href="" class="col-xs-4 menu-item">Women</a>
+    </div>
+    <div class="row title">
+        <div class="col-xs-6 col-xs-offset-3">
+            <h1>Products</h1>
+            <p>985 items</p>
+        </div>
+    </div>
+</div>
+<div class="container product-list">
+    <div class="row">
+            <div class="col-lg-3 filter" id="filter">
+                <div class="close" id="filterClose">
+                    <img class="close-icon" src="{% static 'img/icon-close.svg' %}"/>
+                </div>
+                <div class="block">
+                    <form class="search" action="" autocomplete="on">
+                        <input id="search" name="search" type="text" placeholder="Search"><input id="search_submit" value="Search" type="submit">
+                    </form>
+                </div>
+                <div class="block">
+                    <h3 class="title">Type</h3>
+                    <div class="options basic">
+                        <p class="option active">All (130)</p>
+                        <p class="option">Men (80)</p>
+                        <p class="option">Women (40)</p>
+                        <p class="option">Kids (10)</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <h3 class="title">Category</h3>
+                    <div class="options basic">
+                        <p class="option">All (130)</p>
+                        <p class="option">Running (80)</p>
+                        <p class="option">Tenniss (40)</p>
+                        <p class="option">Football (10)</p>
+                        <p class="option">Training & Gym (10)</p>
+                    </div>
+                    <a href="" class="link">Show all</a>
+                </div>
+                <div class="block">
+                    <h3 class="title">Size</h3>
+                    <div class="options size">
+                        <p class="option active">36</p>
+                        <p class="option">37</p>
+                        <p class="option">37.5</p>
+                        <p class="option">38</p>
+                        <p class="option">38,5</p>
+                        <p class="option">39</p>
+                        <p class="option">40</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <h3 class="title">Brand</h3>
+                    <div class="options basic">
+                        <p class="option">All (130)</p>
+                        <p class="option">Adidas (80)</p>
+                        <p class="option">Nike (40)</p>
+                        <p class="option">Onitsuka (10)</p>
+                        <p class="option">New Balance (10)</p>
+                    </div>
+                    <a href="" class="link">Show all</a>
+                </div>
+                <div class="block">
+                    <h3 class="title">Color</h3>
+                    <div class="options colors">
+                        <div class="option active">
+                            <div class="color rainbow"></div>
+                            <p class="name">All</p>
+                        </div>
+                        <div class="option">
+                            <div class="color" style="background-color: #000;"></div>
+                            <p class="name">Black</p>
+                        </div>
+                        <div class="option">
+                            <div class="color" style="background-color: #0145FF;"></div>
+                            <p class="name">Blue</p>
+                        </div>
+                        <div class="option">
+                            <div class="color" style="background-color: #FF7801;"></div>
+                            <p class="name">Orange</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-lg-9 products">
+                <div class="row top">
+                    <div class="col-xs-6 col-md-6 filter-button" id="filterOpen">
+                        <img class="icon" src="{% static 'img/icon-filter.svg' %}"/>
+                        <p>Filter</p>
+                    </div>
+                    <div class="col-xs-6 col-md-6 title">
+                        <h1>Products</h1>
+                        <p>985 items</p>
+                    </div>
+                    <div class="col-xs-6 col-md-6 sort">
+                        <p>Sort</p>
+                    </div>
+                </div>
+                <div class="row list">
+                    <div class="col-xs-6 col-md-4 col-lg-4 product-thumbnail">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="label popular">popular</div>
+                                <div class="label pre-order">preorder</div>
+                            </div>
+                            <div class="other-images">
+                                <img class="active" src="{% static 'img/productsample.png' %}"/>
+                                <img src="{% static 'img/productsample.png' %}"/>
+                                <img src="{% static 'img/productsample.png' %}"/>
+                                <img src="{% static 'img/productsample.png' %}"/>
+                            </div>
+                            <a href="/product" class="main">
+                                <img src="{% static 'img/productsample.png' %}"/>
+                            </a>
+                        </div>
+                        <a href="">
+                            <h2 class="name">Nike Metcon 5</h2>
+                        </a>
+                        <div class="parameters">
+                            <p class="color">6 Colors</p>
+                            <p class="size">5 Sizes</p>
+                        </div>
+                        <p class="price">145.- €</p>
+                    </div>
+                    <div class="col-xs-6 col-md-4 col-lg-4 product-thumbnail">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="label popular">popular</div>
+                                <div class="label pre-order">preorder</div>
+                            </div>
+                            <div class="other-images">
+                                <img class="active" src="{% static 'img/productsample.png' %}"/>
+                                <img src="{% static 'img/productsample.png' %}"/>
+                                <img src="{% static 'img/productsample.png' %}"/>
+                                <img src="{% static 'img/productsample.png' %}"/>
+                            </div>
+                            <a href="" class="main">
+                                <img src="{% static 'img/productsample.png' %}"/>
+                            </a>
+                        </div>
+                        <a href="">
+                            <h2 class="name">Nike Metcon 5</h2>
+                        </a>
+                        <div class="parameters">
+                            <p class="color">6 Colors</p>
+                            <p class="size">5 Sizes</p>
+                        </div>
+                        <p class="price">145.- €</p>
+                    </div>
+                    <div class="col-xs-6 col-md-4 col-lg-4 product-thumbnail">
+                        <div class="image">
+                            <div class="labels">
+                                <div class="label popular">popular</div>
+                                <div class="label pre-order">preorder</div>
+                            </div>
+                            <div class="other-images">
+                                <img class="active" src="{% static 'img/productsample.png' %}"/>
+                                <img src="{% static 'img/productsample.png' %}"/>
+                                <img src="{% static 'img/productsample.png' %}"/>
+                                <img src="{% static 'img/productsample.png' %}"/>
+                            </div>
+                            <a href="" class="main">
+                                <img src="{% static 'img/productsample.png' %}"/>
+                            </a>
+                        </div>
+                        <a href="">
+                            <h2 class="name">Nike Metcon 5</h2>
+                        </a>
+                        <div class="parameters">
+                            <p class="color">6 Colors</p>
+                            <p class="size">5 Sizes</p>
+                        </div>
+                        <p class="price">145.- €</p>
+                    </div>
+                </div>
+                <div class="row button-block center-xs">
+                    <a href="" class="button button-blue">Load more</a>
+                </div>
+            </div>
+    </div>
+</div>
+{% endblock %}
+    

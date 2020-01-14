@@ -1,0 +1,129 @@
+{% load static %}
+
+<!-- Mobile header -->
+
+<div class="header-mobile" id="mobileHeader">
+    <div class="container">
+        <div class="row top">
+            <div class="menu col-xs-1 col-md-1" id="menuOpen">
+                <img src="{% static 'img/icon-menu.svg' %}"/>
+            </div>
+            <div class="logo col-xs-10 col-md-10 ">
+                <img src="{% static 'img/Snicks-logo.svg' %}"/>
+            </div>
+            <div class="profile col-xs-1 col-md-1 reglogOpen">
+                    <img src="{% static 'img/icon-user.svg' %}"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile menu -->
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="close" id="menuClose">
+        <img class="close-icon" src="{% static 'img/icon-close.svg' %}"/>
+    </div>
+    <div class="menu">
+        <a href="" class="menu-item active">Products</a>
+        <a href="" class="menu-item">Brands</a>
+        <a href="" class="menu-item">Delivery & Payments</a>
+        <a href="" class="menu-item">FAQ</a>
+        <a href="" class="menu-item">Contact</a>
+    </div>
+    <form class="language-choose">
+        <select>
+            <option value="EN">English</option>
+            <option value="EST">Eesti</option>
+            <option value="RUS">Русский</option>
+        </select>
+    </form>
+</div>
+
+<!-- Desktop header -->
+
+<div class="header" id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 logo">
+                <img src="{% static 'img/Snicks-logo.svg' %}"/>
+            </div>
+            <div class="col-lg-8 nav">
+                <form class="language-choose">
+                    <select>
+                        <option value="EN">English</option>
+                        <option value="EST">Eesti</option>
+                        <option value="RUS">Русский</option>
+                    </select>
+                </form>
+                <a href="" class="nav-item active">Products</a>
+                <a href="" class="nav-item">Brands</a>
+                <a href="" class="nav-item">Delivery & Payment</a>
+                <a href="" class="nav-item">FAQ</a>
+                <a href="" class="nav-item">Contact</a>
+            </div>
+            <div class="profile-block col-lg-2">
+                <div class="profile reglogOpen">
+                    <img src="{% static 'img/icon-user.svg' %}"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Login pop-up -->
+
+<div class="pop-up" id="popUp">
+    <div class="close">
+        <img class="close-icon" id="popupClose" src="{% static 'img/icon-close.svg' %}"/>
+    </div>
+    <div class="pop-up-block register-login" id="registerLogin">
+        <h2>Your account</h2>
+        <p>To continue order, you need an account. You can easily open new one or log in if you already have.</p>
+        <div class="button-block">
+            <a href="" class="button button-grey">Sign Up</a>
+            <a href="" class="button button-blue">Log In</a>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay -->
+
+<div class="overlay">
+</div>
+
+<!-- Checkout -->
+
+<div class="cart">
+    <div class="minimised">
+        <div class="container">
+            <div class="row">
+                <div class="title-block">
+                    <div class="icon-block">
+                        <img class="icon" src="{% static 'img/icon-cart.svg' %}"/>
+                    </div>
+                    <h3 class="title">Added to cart</h3>
+                    <p class="link">Show products</p>
+                </div>
+                <div class="price">
+                    <p class="title">1 item/s</p>
+                    <p class="amount">145.- €</p>
+                </div>
+                <div class="additional">
+                    <div class="block promo">
+                        <a href="" class="button button-small button-grey">Promocode</a>
+                    </div>
+                    <div class="block payment">
+                        <a href="" class="button button-small button-grey">Payment method</a>
+                    </div>
+                    <div class="block delivery">
+                        <a href="" class="button button-small button-grey">Delivery method</a>
+                    </div>
+                </div>
+                <div class="proceed">
+                    <a href="" class="button button-small button-blue">Proceed</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

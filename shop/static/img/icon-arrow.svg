@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/Header/Simple" transform="translate(-524.000000, -49.000000)" fill="#979797" fill-rule="nonzero">
+            <g id="Header">
+                <g id="Language" transform="translate(435.000000, 33.000000)">
+                    <path d="M93,19.191878 L89.9754896,16.1673676 C89.7523329,15.9442108 89.3905243,15.9442108 89.1673676,16.1673676 C88.9442108,16.3905243 88.9442108,16.7523329 89.1673676,16.9754896 L92.595939,20.404061 C92.8190957,20.6272178 93.1809043,20.6272178 93.404061,20.404061 L96.8326324,16.9754896 C97.0557892,16.7523329 97.0557892,16.3905243 96.8326324,16.1673676 C96.6094757,15.9442108 96.2476671,15.9442108 96.0245104,16.1673676 L93,19.191878 Z" id="arrow"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
