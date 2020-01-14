@@ -692,6 +692,10 @@ p {
           box-sizing: border-box;
 }
 
+.product-thumbnail .image img {
+  height: 200px;
+}
+
 @media (min-width: 1200px) {
   .product-thumbnail .image {
     padding: 20px;

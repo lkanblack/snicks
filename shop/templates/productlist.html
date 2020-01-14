@@ -108,6 +108,7 @@
                     </div>
                 </div>
                 <div class="row list">
+                {% for post in object_list %}
                     <div class="col-xs-6 col-md-4 col-lg-4 product-thumbnail">
                         <div class="image">
                             <div class="labels">
@@ -115,17 +116,20 @@
                                 <div class="label pre-order">preorder</div>
                             </div>
                             <div class="other-images">
-                                <img class="active" src="{% static 'img/productsample.png' %}"/>
-                                <img src="{% static 'img/productsample.png' %}"/>
-                                <img src="{% static 'img/productsample.png' %}"/>
-                                <img src="{% static 'img/productsample.png' %}"/>
+                                <img class="active" src="{{ post.image.url}}"/>
+                                <img src="{{ post.image.url}}"/>
+                                <img src="{{ post.image.url}}"/>
+                                <img src="{{ post.image.url}}"/>
                             </div>
                             <a href="/product" class="main">
-                                <img src="{% static 'img/productsample.png' %}"/>
+                                <!-- <img src="{% static 'img/productsample.png' %}"/> -->
+                        
+                                    <img src="{{ post.image.url}}" alt="{{ post.title }}">
+                            
                             </a>
                         </div>
                         <a href="">
-                            <h2 class="name">Nike Metcon 5</h2>
+                            <h2 class="name">{{ post.title }}</h2>
                         </a>
                         <div class="parameters">
                             <p class="color">6 Colors</p>
@@ -133,56 +137,7 @@
                         </div>
                         <p class="price">145.- €</p>
                     </div>
-                    <div class="col-xs-6 col-md-4 col-lg-4 product-thumbnail">
-                        <div class="image">
-                            <div class="labels">
-                                <div class="label popular">popular</div>
-                                <div class="label pre-order">preorder</div>
-                            </div>
-                            <div class="other-images">
-                                <img class="active" src="{% static 'img/productsample.png' %}"/>
-                                <img src="{% static 'img/productsample.png' %}"/>
-                                <img src="{% static 'img/productsample.png' %}"/>
-                                <img src="{% static 'img/productsample.png' %}"/>
-                            </div>
-                            <a href="" class="main">
-                                <img src="{% static 'img/productsample.png' %}"/>
-                            </a>
-                        </div>
-                        <a href="">
-                            <h2 class="name">Nike Metcon 5</h2>
-                        </a>
-                        <div class="parameters">
-                            <p class="color">6 Colors</p>
-                            <p class="size">5 Sizes</p>
-                        </div>
-                        <p class="price">145.- €</p>
-                    </div>
-                    <div class="col-xs-6 col-md-4 col-lg-4 product-thumbnail">
-                        <div class="image">
-                            <div class="labels">
-                                <div class="label popular">popular</div>
-                                <div class="label pre-order">preorder</div>
-                            </div>
-                            <div class="other-images">
-                                <img class="active" src="{% static 'img/productsample.png' %}"/>
-                                <img src="{% static 'img/productsample.png' %}"/>
-                                <img src="{% static 'img/productsample.png' %}"/>
-                                <img src="{% static 'img/productsample.png' %}"/>
-                            </div>
-                            <a href="" class="main">
-                                <img src="{% static 'img/productsample.png' %}"/>
-                            </a>
-                        </div>
-                        <a href="">
-                            <h2 class="name">Nike Metcon 5</h2>
-                        </a>
-                        <div class="parameters">
-                            <p class="color">6 Colors</p>
-                            <p class="size">5 Sizes</p>
-                        </div>
-                        <p class="price">145.- €</p>
-                    </div>
+                {% endfor %}
                 </div>
                 <div class="row button-block center-xs">
                     <a href="" class="button button-blue">Load more</a>

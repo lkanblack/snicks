@@ -682,6 +682,10 @@ p {
         position: relative;
         box-sizing: border-box;
 
+        img {
+            height: 200px;
+        }
+
         @media (min-width: 1200px) {
             padding: 20px;
             margin-bottom: 20px;
