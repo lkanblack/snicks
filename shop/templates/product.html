@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row product">
         <div class="col-xs-12 col-md-12 col-lg-7 images">
-            <img src="{% static 'img/product-image-1.png' %}"/>
+            <img src="{{ post.image.url}}"/>
             <img src="{% static 'img/product-image-2.png' %}"/>
             <img src="{% static 'img/product-image-3.png' %}"/>
             <img src="{% static 'img/product-image-4.png' %}"/>
@@ -17,9 +17,9 @@
                 <a href="" class="item">Product list</a>
                 <p class="item">- Nike</p>
             </div>
-            <h1 class="product-name">Nike Metcon 5</h1>
-            <div class="price">€ 145.-</div>
-            <p class="description">The Nike Metcon 5 X Night Time Shine arms you with stability for heavy lifting and traction for sprints during high-impact training. It combines breathability and durability to be your secret weapon in the gym and comes with a removable Hyperlift insert that's compatible with all prior versions of the Metcon.</p>
+            <h1 class="product-name">{{ post.title }}</h1>
+            <div class="price">€ {{ post.price }}</div>
+            <p class="description">{{ post.text }}</p>
             
             <!-- Colors and Size for Mobile -->
 

@@ -121,7 +121,7 @@
                                 <img src="{{ post.image.url}}"/>
                                 <img src="{{ post.image.url}}"/>
                             </div>
-                            <a href="/product" class="main">
+                            <a href="{% url 'product_detail' pk=post.pk %}" class="main">
                                 <!-- <img src="{% static 'img/productsample.png' %}"/> -->
                         
                                     <img src="{{ post.image.url}}" alt="{{ post.title }}">

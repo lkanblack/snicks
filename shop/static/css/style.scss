@@ -450,15 +450,15 @@ p {
             color: $grey;
             @include transition(color, .2s)
 
-            &:hover {
-                color: $black;
-            }
+        }
+        .menu-item:hover {
+            color: $black;
         }
 
         .active {
             color: $black;
         }
-    }
+    } 
 }
 
 // Footer
@@ -1240,6 +1240,7 @@ p {
 // Checkout
 
 .cart {
+    display: none;
     position: relative;
     z-index: 10;
 
